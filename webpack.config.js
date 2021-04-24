@@ -11,10 +11,11 @@ module.exports={
       devtool: 'inline-source-map',
       devServer: {
         contentBase: './dist',
+        hot: true,
       },
       plugins: [
         new HtmlWebpackPlugin({
-          title: 'Caching',
+          title: 'Hot Module Replacement',
         }),
       ],
     output:{
